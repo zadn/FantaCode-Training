@@ -9,11 +9,33 @@ class BColors:
     UNDERLINE = '\033[4m'
 
 
+def round6(name):
+    print(BColors.OKGREEN + "Round 6" + BColors.QUES + "\nThe Old lady died while crossing the river. How?\n\t(a) She had a bypass surgery the week before and her high blood pressure caused her death\n\t(b) The estimated depth of the river was incorrect as calculated by the old lady\n\t(c) There were sharks in the river who couldn't be possibly invited to any birthday party\n\t(d) Some strange, alien object fell from the sky and hit the Old lady, killing her instantly.")
+    inn = input(BColors.OKBLUE + "\n>>")
+    if inn == "d":
+        print(BColors.OKGREEN + "That's wonderful feat. You have passed all the obstacles and Won the hearts of all the other defeated warriors. Congratulations.")
+        exit()
+    else:
+        print("You have achieved so much but still failed. You will have to try again from the beginning. Good luck on your next try.")
+        exit()
+
+def round5(name):
+    print(BColors.OKGREEN + "Round 5" + BColors.QUES + " \n\t An old lady is trying to cross the alligator pond. How will she cross it?\n\t(a) She makes a boat with the available resources around here\n\t(b) Death is inevitable to every Human. She decides her time is now and crosses it.\n\t(c) An elephant comes and she gets on it and both crosses the river together.\n")
+    inn = input(BColors.OKBLUE + ">>")
+    if inn == "b":
+        print(BColors.OKGREEN + "That's true. She will be able to cross the river because all the animals are at the party of King Lion.\n You passed another test. Rejoice")
+        round6(name)
+    else:
+        print(BColors.FAIL + "Alas, you failed. You were truly amazing but it is time we separate. Try again to see if you can pass this test.")
+        exit()
+
+
 def round4(name):
     print("\nRound 4\n" + BColors.QUES + "There's a birthday party of the King Lion going on in the forest. Everybody was invited but one. Who was the one that didn't get the invitation?")
     #cam = input()
     if input(BColors.OKBLUE + ">>") == "Camel":
         print(BColors.OKGREEN + "Great Answer. You are truly mischievous. You may enter the next round\n")
+        round5(name)
     else:
         print(BColors.FAIL + "That's not the right answer. Why name someone when you put someone else in a refrigerator? Get a brain for rent," + name + ", and try again.")
         exit()
