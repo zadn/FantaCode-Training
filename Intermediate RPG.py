@@ -100,13 +100,13 @@ def attack():
     while (not playerisdead) and (not monsterisdead):
         Playerdamage = random.randint(1, 4)
         Monster.hitpoints -= Playerdamage
-        print Player.name + " hits the " + Monster.name + " with a damage of " + str(Playerdamage) + "\t\t\t" + Player.name + "'s Health : " + str(Player.hitpoints) + "\t" + Monster.name + "'s Health : " + str(Monster.hitpoints)
+        print( Player.name + " hits the " + Monster.name + " with a damage of " + str(Playerdamage) + "\t\t\t" + Player.name + "'s Health : " + str(Player.hitpoints) + "\t" + Monster.name + "'s Health : " + str(Monster.hitpoints))
 
         if Monster.hitpoints > 0:
 
             Monsterdamage = random.randint(1, 4)
             Player.hitpoints -= Monsterdamage
-            print Monster.name + " attacked back with a damage of " + str(Monsterdamage) + "\t\t" + Player.name + "'s Health : " + str(Player.hitpoints) + "\t" + Monster.name + "'s Health : " + str(Monster.hitpoints)
+            print( Monster.name + " attacked back with a damage of " + str(Monsterdamage) + "\t\t" + Player.name + "'s Health : " + str(Player.hitpoints) + "\t" + Monster.name + "'s Health : " + str(Monster.hitpoints))
 
             if Player.hitpoints <= 0:
                 playerisdead = True
@@ -115,11 +115,11 @@ def attack():
             monsterisdead = True
 
     if playerisdead:
-        print "\nGame over"
+        print("\nGame over")
     elif monsterisdead:
-        print "\nYou defeated the " + Monster.name
+        print("\nYou defeated the " + Monster.name)
         Player.exppoints = monstinitialhp
-        print "You now have " + str(Player.exppoints) + " XP."
+        print( "You now have " + str(Player.exppoints) + " XP.")
 
 
 
@@ -131,11 +131,11 @@ def CreatePlayer():
     name = ""
     plyrclass = 0
     print("\n##############################\n")
-    print "Enter your Character's Name\n"
-    Playername = raw_input(">>")
+    print("Enter your Character's Name\n")
+    Playername = str(input(">>"))
 
-    print "\nChoose the Class of your character with the given class numbers"
-    print "\n(1) Knight \n(2) Fighter \n(3) Wizard \n(4) Thief\n"
+    print("\nChoose the Class of your character with the given class numbers")
+    print("\n(1) Knight \n(2) Fighter \n(3) Wizard \n(4) Thief\n")
     Playerclass = input()
 
     player = Player(Playername, Playerclass)
@@ -143,35 +143,35 @@ def CreatePlayer():
     print("\tPlayer Class: " + player.playerclass)
     print("\tPlayer Weapon : " + player.weaponname)
     print("\tWeapon Damage : " + str(player.weapondamage))
-    print "\tHealth : " + str(player.hitpoints)
-    print "\tArmor : " + str(player.armorpoints)
-    print "\n\n"
+    print("\tHealth : " + str(player.hitpoints))
+    print("\tArmor : " + str(player.armorpoints))
+    print("\n\n")
 
 
 def Continues():
 
-    print Player.name + " begins his journey"
-    print "Suddenly he faces a monster"
+    print(Player.name + " begins his journey")
+    print("Suddenly he faces a monster")
 
 
     newMons = Monster()
-    print "The monster is " + newMons.name
-    print "The " + newMons.name + " got a " + newMons.weaponname + " with a weapon damage of " + str(newMons.weapondamage) + " and Health of " + str(newMons.hitpoints)
+    print("The monster is " + newMons.name)
+    print("The " + newMons.name + " got a " + newMons.weaponname + " with a weapon damage of " + str(newMons.weapondamage) + " and Health of " + str(newMons.hitpoints))
 
     decision = 0
-    print "Do you want to (1) fight or (2) run ???"
-    decision = input()
+    print("Do you want to (1) fight or (2) run ???")
+    decision = int(input())
     if decision == 1:
         attack()
     elif decision == 2:
-        escpropability = random.randint(1,4)
+        escpropability = random.randint(1, 4)
         if escpropability == 1:
-            print "You fled successfully."
+            print("You fled successfully.")
         else:
-            print "The monster came for a fight. He will get a fight. Your escape plan was a failure."
+            print("The monster came for a fight. He will get a fight. Your escape plan was a failure.")
             attack()
     else:
-        print "Invalid input"
+        print("Invalid input")
 
 CreatePlayer()
 Continues()
