@@ -14,4 +14,4 @@ Intermediate RPG is an implementation of OOP concepts in python. It uses classes
 
 #Data Analysis and Prediction
 
-Analysed, wrangled, cleansed and predicted the data on Titanic Machine Learning from Disaster [a link](https://www.kaggle.com/c/titanic) using Jupyter Notebook.
+Analysed, wrangled, cleansed and predicted the data on [Titanic Machine Learning from Disaster](https://www.kaggle.com/c/titanic) using Jupyter Notebook.
