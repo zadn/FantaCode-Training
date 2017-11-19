@@ -11,3 +11,7 @@ Beginner's game is a RPG game with no class or inheritance implementations. It s
 #Intermediate RPG
 
 Intermediate RPG is an implementation of OOP concepts in python. It uses classes and functions to create a mini text based RPG.
+
+#Data Analysis and Prediction
+
+Analysed, wrangled, cleansed and predicted the data on Titanic Machine Learning from Disaster [a link](https://www.kaggle.com/c/titanic) using Jupyter Notebook.
