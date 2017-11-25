@@ -35,8 +35,8 @@ I tried to implement a [sample notebook solution](https://www.kaggle.com/startup
  
 Learn the basics of Machine Learning and implement it in Scikit Learn
  - [x] K-means Clustering
- - [ ] Linear Regression
- - [ ] Logistic Regression
+ - [x] Linear Regression
+ - [x] Logistic Regression
 
 
  ##### K-means Clustering
@@ -65,7 +65,7 @@ After evaluating, we visualize the Cluster using meshgrid in numpy.
 
 ![K-means Clustedred](images/Visualised.JPEG)
 
-###### Regression Analysis
+#### Regression Analysis
 
 Regression analysis is a set of statistical methods used to estimate relationships between the variables. This is mostly used to find correlation between independent and dependant variables.
 
@@ -81,3 +81,14 @@ The output is as shown below:
 
 ![Linear Regression Output](images/LinearRegressionOut.jpeg)
 
+
+##### Logistic Regression
+
+Logistic regression is a regression model, which helps to relate dependent variable to independent variables where the dependent variables are categorical. It means that the output will be discrete values. When one refers to 'Logistic Regression', he is referring to the binary logistic regression, where there will be only 2 outputs, '1' or '0' (binary). 
+
+The main difference among Linear regression and Logistic regression is that when Linear regression produces an output numerals in an infinite range, Logistic regression results in binary values. This is specifically suitable to many applications. We can use Linear regression where logistic regression are applicable, but it is not efficient. Logistic regression's efficiency comes from it's cross-entropy error function instead of least squares.
+
+For the training, I implemented a [jupyter notebook](Third%20Week/LogisticRegression_Affairs.ipynb) inspired by a [classification of finding affairs in women](http://nbviewer.jupyter.org/gist/justmarkham/6d5c061ca5aee67c4316471f8c2ae976).
+
+
+The dataset was collected from a survey conducted by Redbook magazine. The data had information like age, occupation, number of children, how they rated their married life, husband's occupation, number of extramarital affairs, letc. Information like education and occupation were already assigned values according to each categories, so data cleansing was not necessary here. First the data was preprocessed and prepared. Then the data was visualised to see how some dependents held up against the affair value. After that the data was fitted to the logistic regression model with the necessary data. Then the model was used to predict for some arguments and ran some evaluation metrics. The model turned out to be 73% accurate for predicting if a woman have affairs with the given data.
