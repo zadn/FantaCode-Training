@@ -3,7 +3,7 @@
 This is the repository for updating training programs learned as an intern at FantaCode Solutions.
 
 
-### Beginner's Game
+##### Beginner's Game
 
 Beginner's game is a RPG game with no class or inheritance implementations. It simply uses if-else conditions to match a user input to the specified set of inputs.
 
@@ -92,3 +92,32 @@ For the training, I implemented a [jupyter notebook](Third%20Week/LogisticRegres
 
 
 The dataset was collected from a survey conducted by Redbook magazine. The data had information like age, occupation, number of children, how they rated their married life, husband's occupation, number of extramarital affairs, letc. Information like education and occupation were already assigned values according to each categories, so data cleansing was not necessary here. First the data was preprocessed and prepared. Then the data was visualised to see how some dependents held up against the affair value. After that the data was fitted to the logistic regression model with the necessary data. Then the model was used to predict for some arguments and ran some evaluation metrics. The model turned out to be 73% accurate for predicting if a woman have affairs with the given data.
+
+
+## Week Four
+
+#### Tasks for Forth Week
+
+- Learn flask and create an API for all the algorithms implemented in Scikit learn.
+
+Dividing the task into two:
+ 
+- [ ] Learn about the Flask framework
+- [ ] Create an API for all the algorithms in Third Week's task
+
+##### Flask 
+
+Flask is a micro web framework written in Python. It is based on Werkzeug toolkit and Jinja2 template engine. The main features of Flask are:
+
+- Contains development server and debugger
+- Integrated support for unit testing
+- RESTful request dispatching
+- Uses Jinja2 templating
+- Support for secure cookies (client side sessions)
+- 100% WSGI 1.0 compliant
+- Unicode-based
+- Extensive documentation
+- Google App Engine compatibility
+- Extensions available to enhance features desired
+
+
