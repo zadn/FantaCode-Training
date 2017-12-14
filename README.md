@@ -102,8 +102,8 @@ The dataset was collected from a survey conducted by Redbook magazine. The data 
 
 Dividing the task into two:
  
-- [ ] Learn about the Flask framework
-- [ ] Create an API for all the algorithms in Third Week's task
+- [x] Learn about the Flask framework
+- [x] Create an API for Logistic Regression
 
 ##### Flask 
 
@@ -119,5 +119,48 @@ Flask is a micro web framework written in Python. It is based on Werkzeug toolki
 - Extensive documentation
 - Google App Engine compatibility
 - Extensions available to enhance features desired
+
+
+The Flask was used to implement [an API](Week%20Four/Iris/IrisAPI.py) for logistic regression. The API took in json requests and produced the predictio
+n output as return of the API. A sample input and output of the API is given below:
+
+######Input:
+
+```json
+[
+  [
+        5.5,
+        4.2,
+        1.4,
+        0.2
+    ],
+    [
+        7.3,
+        2.9,
+        6.3,
+        1.8
+    ],
+    [
+        6.0,
+        2.2,
+        4.0,
+        1.0
+    ]
+]
+```
+
+######Output:
+```json
+{
+    "prediction": [
+        0,
+        2,
+        1
+    ]
+}
+```
+
+The API contains two methods, `predict` and `train`. The method `predict` is a 'POST' method and `train` is a 'GET' method.
+
 
 
