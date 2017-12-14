@@ -1,16 +1,12 @@
 
 from flask import Flask, request, jsonify
 import pandas as pd
-import numpy as np
-from sklearn.datasets import load_iris
 from sklearn.externals import joblib
 import traceback
 
 app = Flask(__name__)
 
 model_file_name = 'model/model_iris.pkl'
-
-
 
 
 @app.route('/predict', methods=['POST'])
@@ -21,9 +17,13 @@ def predict():
             query = pd.DataFrame(json_)
 
             prediction = (clf.predict(query))
+            prediction_values = []
+
+            for items in prediction:
+                prediction_values.append(int(items))
 
             print(prediction)
-            return jsonify({'prediction': list(prediction)})
+            return jsonify({'prediction': list(prediction_values)})
 
         except Exception as e:
             return jsonify({'error': str(e), 'trace': traceback.format_exc()})
@@ -31,6 +31,26 @@ def predict():
     else:
         print('train first')
         return 'no model here'
+
+
+@app.route('/train', methods=['GET'])
+def train():
+    from sklearn.datasets import load_iris
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.model_selection import train_test_split
+
+    digits = load_iris()
+    data = digits.data
+    targ = digits.target
+
+    X_train, X_test, y_train, y_test = train_test_split(data, targ, test_size=0.1, random_state=0)
+
+    model = LogisticRegression()
+    model = model.fit(X_train, y_train)
+
+    joblib.dump(model, model_file_name)
+
+    return 'Trained Successfully'
 
 
 if __name__ == '__main__':
