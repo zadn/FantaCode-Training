@@ -163,4 +163,27 @@ n output as return of the API. A sample input and output of the API is given bel
 The API contains two methods, `predict` and `train`. The method `predict` is a 'POST' method and `train` is a 'GET' method.
 
 
+## Week Five
 
+#### Tasks for Fifth Week
+
+ - [x] Learn intermediate machine learning concepts like Neural Networks
+ - [x] Learn basics of Keras and implement a neural network in Keras.
+ 
+ ##### Neural Networks
+ 
+ Artificial Neural Networks are computation models which imitate the biological neural networks, present in the brains.
+ In a neural network, there will be several neurons or units which transmits data from one layer to another and creating 
+ connection with other neurons. These neurons create weights for each neuron and the weights suggest how to process an input.
+ 
+ There may be a single layer or multiple layers hidden in a neural network. The more layers there, the better will be the 
+ network to predict later on, but it will take more processing power to train the network for each iteration. Neural networks 
+ are mostly used in the areas of Visual Recognition, Speech processing, gaming bots, etc. 
+ 
+ ##### Keras
+ 
+ Keras is an open-sourced deep neural network library. Here I've created a neural network to predict the diabetes using 
+ a dataset. The neural network was influenced from [an example found on MachineLearningMastery.com](https://machinelearningmastery.com/tutorial-first-neural-network-python-keras/).
+ 
+ I implemented the example in a [python file](Week%20Five/keras-network.py) and in a [jupyter notebook file](Week%20Five/keras_network.ipynb) 
+ to compare the prediction model with the dataset. The prediction was very fine (8 errors in 77 test data). 
