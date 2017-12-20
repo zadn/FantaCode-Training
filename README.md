@@ -124,7 +124,7 @@ Flask is a micro web framework written in Python. It is based on Werkzeug toolki
 The Flask was used to implement [an API](Week%20Four/Iris/IrisAPI.py) for logistic regression. The API took in json requests and produced the predictio
 n output as return of the API. A sample input and output of the API is given below:
 
-######Input:
+###### Input:
 
 ```json
 [
@@ -149,7 +149,7 @@ n output as return of the API. A sample input and output of the API is given bel
 ]
 ```
 
-######Output:
+###### Output:
 ```json
 {
     "prediction": [
@@ -187,3 +187,36 @@ The API contains two methods, `predict` and `train`. The method `predict` is a '
  
  I implemented the example in a [python file](Week%20Five/keras-network.py) and in a [jupyter notebook file](Week%20Five/keras_network.ipynb) 
  to compare the prediction model with the dataset. The prediction was very fine (8 errors in 77 test data). 
+ 
+ ## Week Six
+ 
+ #### Tasks for Sixth Week
+ 
+ - [x] Learn to work with text datasets.
+ - [ ] Learn to implement an LSTM  and seq-seq model in Keras.
+ - [ ] **Project** : Create a language modelling LSTM in Keras.
+ 
+ ##### Word Embeddings
+ 
+ A recent breakthrough in the field of natural language processing is called word embedding.
+
+This is a technique where words are encoded as real-valued vectors in a high-dimensional space, where the similarity between words in terms of meaning translates to closeness in the vector space.
+Which means if two words are very similar in meaning, they would be very close in the vector space.
+Discrete words are mapped to vectors of continuous numbers. This is useful when working with natural language problems with neural networks and deep learning models are we require numbers as input.
+
+
+
+I implemented two jupyter notebooks, both in which I use imdb review dataset to train models. These data are already embedded
+into numerical values, so no further embedding is required. Although I've embedded to form a dataset with a vocabolary size of 5000.
+One [jupyter notebook](Week%20Six/Text%20Training/MLPmodel_imdb.ipynb) uses a simple Multi-Layer Perceptron model to process
+the imdb dataset. The other [jupyter notebook](Week%20Six/Text%20Training/CNNmodel_imdb.ipynb) uses a 1-Dimensional Convolutional
+Neural Network Model. Both the works were inspired from [a tutorial on MachineLearningMastery.com](https://machinelearningmastery.com/predict-sentiment-movie-reviews-using-deep-learning/).
+
+A CNN is usually used to train an image classifier. CNNs were designed to process the spatial structure in image data.
+They are good at learning to recognize objects in images and find the position of each object. These characteristics of CNN
+is helpful to learn the structure in paragraphs of words.
+
+An interesting fact I learned is that using more epochs doesn't correspond to more accuracy in a CNN. I once ran the CNN
+ with 10 epochs instead of 2 epochs. The accuracy dropped from 86.94% (using 2 epochs) to 86.88% (using 10 epochs). 
+ 
+ 
