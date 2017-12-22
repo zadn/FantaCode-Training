@@ -193,8 +193,8 @@ The API contains two methods, `predict` and `train`. The method `predict` is a '
  #### Tasks for Sixth Week
  
  - [x] Learn to work with text datasets.
- - [ ] Learn to implement an LSTM  and seq-seq model in Keras.
- - [ ] **Project** : Create a language modelling LSTM in Keras.
+ - [x] Learn to implement an LSTM  and seq-seq model in Keras.
+ - [x] **Project** : Create a language modelling LSTM in Keras.
  
  ##### Word Embeddings
  
@@ -219,4 +219,57 @@ is helpful to learn the structure in paragraphs of words.
 An interesting fact I learned is that using more epochs doesn't correspond to more accuracy in a CNN. I once ran the CNN
  with 10 epochs instead of 2 epochs. The accuracy dropped from 86.94% (using 2 epochs) to 86.88% (using 10 epochs). 
  
+ ##### Recurrent Neural Networks
  
+ A RNN has loops in them that allow infromation to be carried across neurons while reading in input.
+ 
+ *Structure of a simple RNN:*
+ 
+ ![Rolled RNN](images/Rolled_RNN.png)
+
+*Unrolled Structure of a RNN:*
+
+![Unrolled Structure of RNN](images/Unrolled_RNN.png)
+
+Theoretically RNNs can handle context from the beginning of the sentence which will allow more accurate predictions of 
+a word at the end of a sentence. In practice this isn’t necessarily true for vanilla RNNs. This is a major reason why 
+RNNs faded out from practice for a while until some great results were achieved with using a Long Short Term Memory(LSTM)
+ unit inside the Neural Network. Adding the LSTM to the network is like adding a memory unit that can remember context 
+ from the very beggining of the input.
+ 
+ ##### Long Short Term Memory networks (LSTM)
+ 
+ Long Short Term Memory networks – usually just called “LSTMs” – are a special kind of RNN, capable of learning long-term
+  dependencies. They were introduced by Hochreiter & Schmidhuber (1997), and were refined and popularized by many people 
+  in following work.1 They work tremendously well on a large variety of problems, and are now widely used.
+
+LSTMs are explicitly designed to avoid the long-term dependency problem. Remembering information for long periods of time
+ is practically their default behavior, not something they struggle to learn!
+
+All recurrent neural networks have the form of a chain of repeating modules of neural network. In standard RNNs, this 
+repeating module will have a very simple structure, such as a single tanh layer.
+
+*Structure of a LSTM network:*
+
+![LSTM Structure](images/LSTM3-chain.png)
+
+Some of the variants of LSTM are : 
+
+- LSTM with 'peephole connections', introduced by [Gers & Schmidhuber (2000)](ftp://ftp.idsia.ch/pub/juergen/TimeCount-IJCNN2000.pdf)
+- LSTM with coupled forget and input gates
+- Gated Recurrent Unit (GRU)
+
+
+I implemented a [jupyter notebook](Week%20Six/LSTM/TextGen_LSTM.ipynb) with LSTM RNN by training data using 'Alice's Adventures in Wonderland' story from [Project Gutenberg](http://www.gutenberg.org/cache/epub/11/pg11.txt).
+The model took about 17 minutes to pass 1 epoch. Here's a sample output I got with 20 epochs:
+
+>Seed:
+"  from her as hard as it could go, and making quite a commotion in
+the pool as it went.
+so she calle "
+
+>d to ter whate whe world oadt to the woile oa then and toen a getd wan a lootne oo the tait, and the war not in the bane and the sabbit sat sh the tabte oi the gad nerer here the was so toe thee  the was not in the bane and the sabbit sat sh the tabte oi the garter was no the tine the was soenk again, and the whrt here toiee the whrt wall to the woide the was so tone the was so toye 
+the had nov oo the taate of the war so toenk ano hor hoa to the tooe of the garter, and was solniig an inr an she wooke. and tae toei it har hnat the white rabbit was soe oant of the whrt of the garter, and whs wored toen it tas an anl oo the toie. ‘ho wou den to you do wou hane to tea that iave a can! io wou den’ wouhd the want on an inrssns,’
+‘h woode than to ae a cetd wail to,’ said alice, ‘aod the mors oi the garter wouh a cian winh i sai soene the wante  and the world bale wait in she bane and the sare whth the same th thi white rase in and toen a gett wanlee of the woide oo the wan hoon the tas so t
+
+
