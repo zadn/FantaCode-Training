@@ -273,3 +273,12 @@ the had nov oo the taate of the war so toenk ano hor hoa to the tooe of the gart
 ‘h woode than to ae a cetd wail to,’ said alice, ‘aod the mors oi the garter wouh a cian winh i sai soene the wante  and the world bale wait in she bane and the sare whth the same th thi white rase in and toen a gett wanlee of the woide oo the wan hoon the tas so t
 
 
+ ## Week Seven
+ 
+ #### Tasks for Sixth Weekm
+ 
+ - [x] Work with Facebook’s Babi Dataset and Experiment with different models like LSTM, MANN to improve accuracy on it.
+ 
+  I used the Facebook's bAbI dataset to train and test a model, which takes in certain statements of a number of personnel's
+  activities (only limited vocabulary here), and then see the result using a couple of statements predict using the model.
+  The task was done in [this python file]('Week%20Seven/bAbI_completed.py'). 
