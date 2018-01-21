@@ -275,10 +275,10 @@ the had nov oo the taate of the war so toenk ano hor hoa to the tooe of the gart
 
  ## Week Seven
  
- #### Tasks for Sixth Weekm
+ #### Tasks for Seventh Week
  
  - [x] Work with Facebook’s Babi Dataset and Experiment with different models like LSTM, MANN to improve accuracy on it.
  
   I used the Facebook's bAbI dataset to train and test a model, which takes in certain statements of a number of personnel's
   activities (only limited vocabulary here), and then see the result using a couple of statements predict using the model.
-  The task was done in [this python file]('Week%20Seven/bAbI_completed.py'). 
+  The task was done in [this python file](Week%20Seven/bAbI_completed.py). 

@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a06c9f13-d3ac-4304-96b3-1666cd10e1ff" name="Default" comment="Completed Tasks for seventh week and updated README file">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Extras/handwriting_classif_nn/mnist_nn.ipynb" />
+    <list default="true" id="a06c9f13-d3ac-4304-96b3-1666cd10e1ff" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Second Week/Data_Analysis/Titanic.ipynb" afterPath="$PROJECT_DIR$/Second Week/Data_Analysis/Titanic.ipynb" />
-      <change beforePath="$PROJECT_DIR$/Week Six/LSTM/.ipynb_checkpoints/TextGen_LSTM-checkpoint.ipynb" afterPath="$PROJECT_DIR$/Week Six/LSTM/.ipynb_checkpoints/TextGen_LSTM-checkpoint.ipynb" />
-      <change beforePath="$PROJECT_DIR$/Week Six/LSTM/TextGen_LSTM.ipynb" afterPath="$PROJECT_DIR$/Week Six/LSTM/TextGen_LSTM.ipynb" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +21,7 @@
       <file leaf-file-name="bAbI_completed.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Week Seven/bAbI_completed.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2820">
+            <state relative-caret-position="289">
               <caret line="197" column="1" lean-forward="false" selection-start-line="197" selection-start-column="1" selection-end-line="197" selection-end-column="1" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
@@ -36,7 +33,7 @@
       <file leaf-file-name="qa2_two-supporting-facts_test.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Week Seven/tasks/en/qa2_two-supporting-facts_test.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4440">
+            <state relative-caret-position="300">
               <caret line="296" column="28" lean-forward="false" selection-start-line="283" selection-start-column="2" selection-end-line="296" selection-end-column="28" />
               <folding />
             </state>
@@ -47,15 +44,15 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="128">
-                <caret line="279" column="5" lean-forward="false" selection-start-line="279" selection-start-column="5" selection-end-line="279" selection-end-column="5" />
+              <first_editor relative-caret-position="143">
+                <caret line="277" column="28" lean-forward="true" selection-start-line="277" selection-start-column="28" selection-end-line="277" selection-end-column="28" />
                 <folding>
-                  <marker date="1516504650145" expanded="true" signature="6815:7007" ph="[...]" />
-                  <marker date="1516504650145" expanded="true" signature="6819:6877" ph="[...]" />
-                  <marker date="1516504650145" expanded="true" signature="6883:6941" ph="[...]" />
-                  <marker date="1516504650145" expanded="true" signature="6947:7005" ph="[...]" />
-                  <marker date="1516504650145" expanded="true" signature="7036:7097" ph="{...}" />
-                  <marker date="1516504650145" expanded="true" signature="7056:7095" ph="[...]" />
+                  <marker date="1516505799212" expanded="true" signature="6815:7007" ph="[...]" />
+                  <marker date="1516505799212" expanded="true" signature="6819:6877" ph="[...]" />
+                  <marker date="1516505799212" expanded="true" signature="6883:6941" ph="[...]" />
+                  <marker date="1516505799212" expanded="true" signature="6947:7005" ph="[...]" />
+                  <marker date="1516505799212" expanded="true" signature="7036:7097" ph="{...}" />
+                  <marker date="1516505799212" expanded="true" signature="7056:7095" ph="[...]" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -598,13 +595,21 @@
       <option name="project" value="LOCAL" />
       <updated>1516504864530</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Test 2 : Completed Tasks for seventh week and updated README file">
+      <created>1516505327535</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1516505327536</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="138" y="14" width="1340" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31993818" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31993818" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="JSON Utils" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32686085" sideWeight="0.5030912" order="7" side_tool="true" content_ui="tabs" />
@@ -682,7 +687,8 @@
     <MESSAGE value="Completed the First task for Sixth Week and updated the README file." />
     <MESSAGE value="Completed Tasks for sixth week and updated README file" />
     <MESSAGE value="Test Commit : Completed Tasks for seventh week and updated README file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test Commit : Completed Tasks for seventh week and updated README file" />
+    <MESSAGE value="Test 2 : Completed Tasks for seventh week and updated README file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test 2 : Completed Tasks for seventh week and updated README file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -873,7 +879,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Week Seven/tasks/en/qa2_two-supporting-facts_test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4440">
+        <state relative-caret-position="300">
           <caret line="296" column="28" lean-forward="false" selection-start-line="283" selection-start-column="2" selection-end-line="296" selection-end-column="28" />
           <folding />
         </state>
@@ -881,7 +887,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Week Seven/bAbI_completed.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2820">
+        <state relative-caret-position="289">
           <caret line="197" column="1" lean-forward="false" selection-start-line="197" selection-start-column="1" selection-end-line="197" selection-end-column="1" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
@@ -897,15 +903,15 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="128">
-            <caret line="279" column="5" lean-forward="false" selection-start-line="279" selection-start-column="5" selection-end-line="279" selection-end-column="5" />
+          <first_editor relative-caret-position="143">
+            <caret line="277" column="28" lean-forward="true" selection-start-line="277" selection-start-column="28" selection-end-line="277" selection-end-column="28" />
             <folding>
-              <marker date="1516504650145" expanded="true" signature="6815:7007" ph="[...]" />
-              <marker date="1516504650145" expanded="true" signature="6819:6877" ph="[...]" />
-              <marker date="1516504650145" expanded="true" signature="6883:6941" ph="[...]" />
-              <marker date="1516504650145" expanded="true" signature="6947:7005" ph="[...]" />
-              <marker date="1516504650145" expanded="true" signature="7036:7097" ph="{...}" />
-              <marker date="1516504650145" expanded="true" signature="7056:7095" ph="[...]" />
+              <marker date="1516505799212" expanded="true" signature="6815:7007" ph="[...]" />
+              <marker date="1516505799212" expanded="true" signature="6819:6877" ph="[...]" />
+              <marker date="1516505799212" expanded="true" signature="6883:6941" ph="[...]" />
+              <marker date="1516505799212" expanded="true" signature="6947:7005" ph="[...]" />
+              <marker date="1516505799212" expanded="true" signature="7036:7097" ph="{...}" />
+              <marker date="1516505799212" expanded="true" signature="7056:7095" ph="[...]" />
             </folding>
           </first_editor>
           <second_editor />
