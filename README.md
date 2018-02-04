@@ -32,7 +32,7 @@ I tried to implement a [sample notebook solution](https://www.kaggle.com/startup
 ## Third Week
 
 #### Tasks for Third Week
- 
+
 Learn the basics of Machine Learning and implement it in Scikit Learn
  - [x] K-means Clustering
  - [x] Linear Regression
@@ -101,7 +101,7 @@ The dataset was collected from a survey conducted by Redbook magazine. The data 
 - Learn flask and create an API for all the algorithms implemented in Scikit learn.
 
 Dividing the task into two:
- 
+
 - [x] Learn about the Flask framework
 - [x] Create an API for Logistic Regression
 
@@ -169,35 +169,35 @@ The API contains two methods, `predict` and `train`. The method `predict` is a '
 
  - [x] Learn intermediate machine learning concepts like Neural Networks
  - [x] Learn basics of Keras and implement a neural network in Keras.
- 
+
  ##### Neural Networks
- 
+
  Artificial Neural Networks are computation models which imitate the biological neural networks, present in the brains.
  In a neural network, there will be several neurons or units which transmits data from one layer to another and creating 
  connection with other neurons. These neurons create weights for each neuron and the weights suggest how to process an input.
- 
+
  There may be a single layer or multiple layers hidden in a neural network. The more layers there, the better will be the 
  network to predict later on, but it will take more processing power to train the network for each iteration. Neural networks 
  are mostly used in the areas of Visual Recognition, Speech processing, gaming bots, etc. 
- 
+
  ##### Keras
- 
+
  Keras is an open-sourced deep neural network library. Here I've created a neural network to predict the diabetes using 
  a dataset. The neural network was influenced from [an example found on MachineLearningMastery.com](https://machinelearningmastery.com/tutorial-first-neural-network-python-keras/).
- 
+
  I implemented the example in a [python file](Week%20Five/keras-network.py) and in a [jupyter notebook file](Week%20Five/keras_network.ipynb) 
  to compare the prediction model with the dataset. The prediction was very fine (8 errors in 77 test data). 
- 
+
  ## Week Six
- 
+
  #### Tasks for Sixth Week
- 
+
  - [x] Learn to work with text datasets.
  - [x] Learn to implement an LSTM  and seq-seq model in Keras.
  - [x] **Project** : Create a language modelling LSTM in Keras.
- 
+
  ##### Word Embeddings
- 
+
  A recent breakthrough in the field of natural language processing is called word embedding.
 
 This is a technique where words are encoded as real-valued vectors in a high-dimensional space, where the similarity between words in terms of meaning translates to closeness in the vector space.
@@ -218,13 +218,13 @@ is helpful to learn the structure in paragraphs of words.
 
 An interesting fact I learned is that using more epochs doesn't correspond to more accuracy in a CNN. I once ran the CNN
  with 10 epochs instead of 2 epochs. The accuracy dropped from 86.94% (using 2 epochs) to 86.88% (using 10 epochs). 
- 
+
  ##### Recurrent Neural Networks
- 
+
  A RNN has loops in them that allow infromation to be carried across neurons while reading in input.
- 
+
  *Structure of a simple RNN:*
- 
+
  ![Rolled RNN](images/Rolled_RNN.png)
 
 *Unrolled Structure of a RNN:*
@@ -236,9 +236,9 @@ a word at the end of a sentence. In practice this isn’t necessarily true for v
 RNNs faded out from practice for a while until some great results were achieved with using a Long Short Term Memory(LSTM)
  unit inside the Neural Network. Adding the LSTM to the network is like adding a memory unit that can remember context 
  from the very beggining of the input.
- 
+
  ##### Long Short Term Memory networks (LSTM)
- 
+
  Long Short Term Memory networks – usually just called “LSTMs” – are a special kind of RNN, capable of learning long-term
   dependencies. They were introduced by Hochreiter & Schmidhuber (1997), and were refined and popularized by many people 
   in following work.1 They work tremendously well on a large variety of problems, and are now widely used.
@@ -264,21 +264,36 @@ I implemented a [jupyter notebook](Week%20Six/LSTM/TextGen_LSTM.ipynb) with LSTM
 The model took about 17 minutes to pass 1 epoch. Here's a sample output I got with 20 epochs:
 
 >Seed:
-"  from her as hard as it could go, and making quite a commotion in
-the pool as it went.
-so she calle "
+>"  from her as hard as it could go, and making quite a commotion in
+>the pool as it went.
+>so she calle "
 
 >d to ter whate whe world oadt to the woile oa then and toen a getd wan a lootne oo the tait, and the war not in the bane and the sabbit sat sh the tabte oi the gad nerer here the was so toe thee  the was not in the bane and the sabbit sat sh the tabte oi the garter was no the tine the was soenk again, and the whrt here toiee the whrt wall to the woide the was so tone the was so toye 
-the had nov oo the taate of the war so toenk ano hor hoa to the tooe of the garter, and was solniig an inr an she wooke. and tae toei it har hnat the white rabbit was soe oant of the whrt of the garter, and whs wored toen it tas an anl oo the toie. ‘ho wou den to you do wou hane to tea that iave a can! io wou den’ wouhd the want on an inrssns,’
-‘h woode than to ae a cetd wail to,’ said alice, ‘aod the mors oi the garter wouh a cian winh i sai soene the wante  and the world bale wait in she bane and the sare whth the same th thi white rase in and toen a gett wanlee of the woide oo the wan hoon the tas so t
+>the had nov oo the taate of the war so toenk ano hor hoa to the tooe of the garter, and was solniig an inr an she wooke. and tae toei it har hnat the white rabbit was soe oant of the whrt of the garter, and whs wored toen it tas an anl oo the toie. ‘ho wou den to you do wou hane to tea that iave a can! io wou den’ wouhd the want on an inrssns,’
+>‘h woode than to ae a cetd wail to,’ said alice, ‘aod the mors oi the garter wouh a cian winh i sai soene the wante  and the world bale wait in she bane and the sare whth the same th thi white rase in and toen a gett wanlee of the woide oo the wan hoon the tas so t
 
 
  ## Week Seven
- 
+
  #### Tasks for Seventh Week
- 
+
  - [x] Work with Facebook’s Babi Dataset and Experiment with different models like LSTM, MANN to improve accuracy on it.
- 
+
   I used the Facebook's bAbI dataset to train and test a model, which takes in certain statements of a number of personnel's
   activities (only limited vocabulary here), and then see the result using a couple of statements predict using the model.
   The task was done in [this python file](Week%20Seven/bAbI_completed.py). 
+
+
+
+## Module Ten
+
+### Task
+
+- [x] Implement contextual Chatbot in Keras.
+- [ ] Project - Add Contextual Features to the News Bot Created in previous
+      week’s project.
+
+I implemented a chatbot using [gunthercox-corpus](https://github.com/gunthercox/chatterbot-corpus) dataset and used the GloVe word encoding to improve the performance. To see the chatbot in action, run [chatbot.py](Module%20Ten/chatbot.py) and to train the model, run [train_chatbot.py](Module%20Ten/train_chatbot.py). 
+
+
+
