@@ -290,7 +290,7 @@ The model took about 17 minutes to pass 1 epoch. Here's a sample output I got wi
 ### Task
 
 - [x] Implement contextual Chatbot in Keras.
-- [ ] Project - Add Contextual Features to the News Bot Created in previous
+- [x] Project - Add Contextual Features to the News Bot Created in previous
       week’s project.
 
 I implemented a chatbot using [gunthercox-corpus](https://github.com/gunthercox/chatterbot-corpus) dataset and used the GloVe word encoding to improve the performance. To see the chatbot in action, run [chatbot.py](Module%20Ten/chatbot.py) and to train the model, run [train_chatbot.py](Module%20Ten/train_chatbot.py). 
